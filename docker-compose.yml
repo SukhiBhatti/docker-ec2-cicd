@@ -1,0 +1,23 @@
+services:
+   backend:
+      build: ./backend
+      image: my-backend
+      ports:
+        - "3001:3001"
+      depends_on:
+        - mongo
+   frontend:
+      build: ./frontend
+      image: my-frontend
+      ports:
+        - "3000:3000"
+   mongo:
+      image: mongo:7
+      environment:
+       MONGO_INITDB_ROOT_USERNAME: username
+       MONGO_INITDB_ROOT_PASSWORD: password
+      volumes:
+        - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
