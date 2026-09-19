@@ -143,8 +143,19 @@ http://<EC2-PUBLIC-IP>
 * GitHub Actions CI/CD
 * Deployment troubleshooting
 
+## 📸 Screenshots
+
+### Architecture
+![Architecture](screenshots/architecture.png)
+
+### CI/CD Pipeline
+![GitHub Actions](screenshots/github-actions.png)
+
+### Running Containers
+![Docker Compose](screenshots/docker-compose.png)
+
 ## Author
 
-**Sukhdeep (Sukhi)**
+**Sukhdeep Singh**
 
 GitHub: [SukhiBhatti](https://github.com/SukhiBhatti)
